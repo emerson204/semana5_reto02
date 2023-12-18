@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.contenedor {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.linex {
+  display: block;
+  width: 8rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background-color: red;
+}
+
+.linex.linex-paq {
+  margin-bottom: 1rem;
+}
+/*HEADER*/
+.header {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid red;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navegacion ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navegacion ul li {
+  list-style: none;
+}
+
+.navegacion .navegacion-link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.btn-contacto {
+  padding: 0.5rem 2.5rem;
+  border: 1px solid red;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*HERO*/
+.hero {
+  background-image: url(./img//buffet-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-heading {
+  max-width: 55rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #efff09;
+  text-shadow: 4px 2px 1px black;
+}
+
+/*SECCTION DE QUIENES SOMOS*/
+.somos-heading {
+  text-transform: uppercase;
+}
+
+.somos-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.somos-text {
+  margin-bottom: 1.5rem;
+}
+
+/*SECCION DE EVENTOS FORMALES*/
+.events {
+  background-image: url(./img/food-table.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.262);
+  inset: 0;
+}
+
+.events-text {
+  max-width: 40rem;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  z-index: 10;
+}
+
+/*SECCION DE SERVICIOS*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: -1px 1px 3px rgb(190, 190, 190);
+}
+
+.card-text {
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+/*SECCION DE PAQUETES*/
+.paquetes-text {
+  margin-bottom: 2.5rem;
+}
+
+.cards-paquetes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+article {
+  border: 1px solid rgb(170, 170, 170);
+}
+
+article header h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
+article p {
+  background-color: #d7d7d7;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+article ul li {
+  list-style: none;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0.8rem 2rem;
+  text-align: center;
+}
+
+article ul li:last-child {
+  border-bottom: none;
+}
+
+article ul li i {
+  color: #028004;
+}
+
+/*CONTACTO*/
+.contacto-text {
+  line-height: 2;
+}
+
+.formulario {
+  margin-top: 2.5rem;
+}
+
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* .formulario {
+  width: 100%;
+} */
+
+.formulario-box {
+  width: 32%;
+}
+
+.formulario-box label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.formulario-box input {
+  width: 100%;
+  padding: 0.7rem 0;
+  border: 1px solid #c6c6c6;
+}
+
+.formulario-box textarea {
+  width: 75rem;
+  border: 1px solid #c6c6c6;
+}
+
+.contacto-btn {
+  padding: 0.7rem 3rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #4cb050;
+  color: white;
+}
+
+/*FOOTER FINISH*/
+.finish {
+  padding: 1.8rem 0 1rem 0;
+  background-color: #252525;
+  text-align: center;
+  color: white;
+}
+
+.finish i {
+  color: white;
+  font-size: 1.7rem;
+  margin-left: 0.5rem;
+}
+
+.finish i:first-child {
+  margin-left: 0;
+}
+
+.finish p {
+  margin-top: 2rem;
+  border-top: 1px solid #5e5e5e;
+  padding-top: 1rem;
+}
